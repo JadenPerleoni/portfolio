@@ -1,0 +1,83 @@
+// .header {
+//     color: white;
+//     padding: 20px;
+//     text-align: center;
+//     border: black;
+//     border-style: solid;
+//     border-width: 5px;
+//     width: 37%;
+//     margin-left: auto;
+//     margin-right: auto;
+
+// }
+
+/* ---------- Begin .rotating-border ---------- */
+@keyframes spin {
+	from {transform: translate(-50%, -50%) rotate(0);}
+	to   {transform: translate(-50%, -50%) rotate(360deg);}
+  }
+  .header {
+	--border-radius: 1rem;
+	--border-size: 0.5rem;
+	--border-bg: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+	--padding: 1rem;
+	width: 40%;
+	height: 200px;
+    font-family: Serif;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	margin: auto;
+	line-height: 1.5;
+	vertical-align: middle;
+
+	
+	position: relative;
+	overflow: hidden;
+	
+	border-radius: var(--border-radius);
+	
+	&::before {
+	  content: '';
+	  display: block;
+	  background: var(--border-bg);
+	  width: calc(100% * 1.41421356237);
+	  padding-bottom: calc(100% * 1.41421356237);
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  transform: translate(-50%, -50%);
+	  border-radius: 100%;
+	  z-index: -2;
+	  animation: spin 5s linear infinite;
+	}
+	&--reverse::before{
+	  animation-direction: reverse;
+	}
+	&::after{
+	  content: '';
+	  position: absolute;
+	  inset: var(--border-size);
+	  background: #282c34;
+	  z-index: -1;
+	  border-radius: calc(var(--border-radius) - var(--border-size));
+	}
+  }
+  /* ---------- End .rotating-border ---------- */
+  
+  /* ---------- Begin customizing .rotating-border ---------- */
+  .header {
+	--border-radius: 0.5rem;
+	--border-size: 0.25rem;
+	--border-bg: conic-gradient(
+	  #ea4335 0.0turn 0.125turn, 
+	  #4285f4 0.125turn 0.25turn, 
+	  #fbbc05 0.25turn 0.375turn, 
+	  #34a853 0.375turn 0.5turn, 
+	  #ea4335 0.5turn 0.625turn, 
+	  #4285f4 0.625turn 0.75turn, 
+	  #fbbc05 0.75turn 0.875turn, 
+	  #34a853 0.875turn 1.0turn
+	);
+	
+  }
