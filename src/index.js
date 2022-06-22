@@ -25,7 +25,7 @@ const Container = () => {
         {
             id: 3, 
             skill: 'React',
-            skillInfo: `I started learning reacting to gain knowledge on front-end development.
+            skillInfo: `I started learning reacting to git gain knowledge on front-end development.
             While I greatly prefer back-end, I feel that it's important to learn fullstack development.`
         },
     ]
