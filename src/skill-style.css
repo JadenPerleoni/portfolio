@@ -1,0 +1,67 @@
+.skillContainer {
+    font-family: monospace;
+    font-size: 24px;
+    color: #e5e2e2;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    display: block;
+    
+
+}
+
+.skillBackground {
+    position: relative;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: monospace;
+    text-orientation: none;
+    border: 6px solid black;
+    padding: 14px 60px;
+    overflow: hidden;
+    transition: 1s all ease;
+    border-radius: 50%;
+    height: 100px;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #293c61;
+
+}
+.skillBackground:hover {
+    font-size: 48px;
+}
+.skillBackground::before {
+    content: "";
+    width: 200%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    
+}
+.skillBackground::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.skillBackground::before {
+    height: 100%;
+}
+
+.skillBackground:hover::before {
+    height: 0;
+}
+
+.skillName {
+    margin: 0;
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

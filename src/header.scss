@@ -68,16 +68,16 @@
   /* ---------- Begin customizing .rotating-border ---------- */
   .header {
 	--border-radius: 0.5rem;
-	--border-size: 0.25rem;
+	--border-size: 0.35rem;
 	--border-bg: conic-gradient(
-	  #ea4335 0.0turn 0.125turn, 
-	  #4285f4 0.125turn 0.25turn, 
-	  #fbbc05 0.25turn 0.375turn, 
-	  #34a853 0.375turn 0.5turn, 
-	  #ea4335 0.5turn 0.625turn, 
-	  #4285f4 0.625turn 0.75turn, 
-	  #fbbc05 0.75turn 0.875turn, 
-	  #34a853 0.875turn 1.0turn
+	  #293c61 0.0turn 0.125turn, 
+	  #000000 0.125turn 0.25turn, 
+	  #293c61 0.25turn 0.375turn, 
+	  #000000 0.375turn 0.5turn, 
+	  #293c61 0.5turn 0.625turn, 
+	  #000000 0.625turn 0.75turn, 
+	  #293c61 0.75turn 0.875turn, 
+	  #000000 0.875turn 1.0turn
 	);
 	
   }
