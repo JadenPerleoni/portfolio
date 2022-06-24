@@ -21,7 +21,7 @@
     border: 6px solid black;
     padding: 14px 60px;
     overflow: hidden;
-    transition: 1s all ease;
+    transition: .3s all ease;
     border-radius: 50%;
     height: 100px;
     width: 35%;
