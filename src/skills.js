@@ -5,10 +5,13 @@ import useCollapse from 'react-collapsed';
 let expanded = false;
 const Skills = (props) => {
     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+ 
 
     return (
-        <div className="skillContainer" >
+        <div className="skillContainer">
             <div className="skillBackground" {...getToggleProps()}>
+
+
                 <div className="skillName">
                     {props.skill}
                 </div>
@@ -16,12 +19,11 @@ const Skills = (props) => {
             <div {...getCollapseProps()}>
                 <div className="vl"></div>
 
-                <div className="content">
+                <div id="content">
 
                     {props.skillInfo}
                 </div>
             </div>
-
 
         </div>
     );

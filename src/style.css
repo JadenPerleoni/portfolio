@@ -1,5 +1,6 @@
 body {
     background-color: #282c34;
+    scroll-behavior: auto;
 
 }
 
@@ -8,6 +9,7 @@ h3 {
     padding: 15px;
     font-family: Serif;
     text-align: center;
+    font-size: 24px;
 }
 hr {
     width: 40%;
@@ -17,7 +19,7 @@ hr {
 }
 
 
-.content {
+#content {
     text-align: center;
     background-color: #2f3f61;
     margin: 0 auto;
