@@ -15,19 +15,22 @@ const Container = () => {
             skill: 'Java',
             skillInfo: `Java was the first language that I ever used beyond surface level
             programming. Using it taught me many important programming concepts that I use 
-            everyday.`
+            everyday. This is the language that I am best aquainted with.`
         },
         {
             id: 2,
             skill: 'Javascript',
             skillInfo: `I've recently started using Javascript to create fullstack web applications.
-            I'm very new to it, but I have been greatly enjoying learning its libraries.`
+            I'm very new to it, but I have been enjoying learning its libraries. I belive that Javascript 
+            is useful in a lot of front-end and back-end applications, making it a vital skill to any
+            software developer.`
         },
         {
             id: 3,
             skill: 'React',
-            skillInfo: `I started learning reacting to git gain knowledge on front-end development.
-            While I greatly prefer back-end development, I feel that it's important to learn fullstack development.`
+            skillInfo: `I started learning react to gain knowledge on front-end development.
+            While I greatly prefer back-end, I feel that it's important to learn fullstack development.
+            `
         },
     ]
     return (
